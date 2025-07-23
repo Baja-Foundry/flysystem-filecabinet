@@ -7,12 +7,6 @@
          failOnWarning="true"
          stopOnFailure="false">
     <testsuites>
-        <testsuite name="Unit">
-            <directory>tests/Unit</directory>
-        </testsuite>
-        <testsuite name="Integration">
-            <directory>tests/Integration</directory>
-        </testsuite>
         <testsuite name="Live">
             <directory>tests/Live</directory>
         </testsuite>
@@ -24,7 +18,7 @@
     </source>
     <coverage>
         <report>
-            <html outputDirectory="coverage"/>
+            <html outputDirectory="coverage-live"/>
         </report>
     </coverage>
     <php>
@@ -33,5 +27,8 @@
         <ini name="display_startup_errors" value="1" />
         <!-- Suppress known external library deprecation warnings -->
         <env name="SUPPRESS_EXTERNAL_DEPRECATIONS" value="true" />
+        <!-- Live test configuration -->
+        <ini name="memory_limit" value="256M" />
+        <ini name="max_execution_time" value="300" />
     </php>
 </phpunit>

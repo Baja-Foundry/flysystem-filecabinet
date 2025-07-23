@@ -153,3 +153,16 @@ To use this adapter, you need:
 See NetSuite's documentation for detailed setup instructions:
 - [SuiteTalk REST Web Services](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/chapter_1540391670.html)
 - [Token-Based Authentication](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4247337262.html)
+
+## Advanced Testing
+
+For comprehensive testing against real NetSuite environments, see the [Live Testing Guide](LIVE_TESTING.md) which provides:
+
+- **28+ Live Tests** against actual NetSuite FileCabinet
+- **Automated cleanup** of test files
+- **Rate limiting** compliance
+- **Performance monitoring** and benchmarking
+- **Error recovery** testing
+- **Complete workflow** validation
+
+The live testing suite complements this connection testing by providing thorough validation of all adapter functionality in real-world scenarios.

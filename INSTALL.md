@@ -383,9 +383,10 @@ Once you have confirmed the connection is working:
 
 1. **Configure root folder**: Set `NETSUITE_ROOT_FOLDER_ID` if you want to restrict access to a specific folder
 2. **Set up file paths**: Organize your NetSuite FileCabinet structure
-3. **Implement error handling**: Add proper exception handling in your application
-4. **Add logging**: Consider logging file operations for audit purposes
-5. **Test in staging**: Thoroughly test with your staging NetSuite environment before production
+3. **Run live tests**: Use the [Live Testing Guide](LIVE_TESTING.md) to run comprehensive tests against your NetSuite environment
+4. **Implement error handling**: Add proper exception handling in your application
+5. **Add logging**: Consider logging file operations for audit purposes
+6. **Test in staging**: Thoroughly test with your staging NetSuite environment before production
 
 ## Security Considerations
 

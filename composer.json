@@ -38,7 +38,15 @@
     },
     "scripts": {
         "test": "phpunit",
+        "test-unit": "phpunit --testsuite=Unit",
+        "test-integration": "phpunit --testsuite=Integration",
+        "test-live": "phpunit --configuration=phpunit-live.xml",
         "test-coverage": "phpunit --coverage-html coverage",
+        "test-live-coverage": "phpunit --configuration=phpunit-live.xml --coverage-html coverage-live",
+        "test-all": [
+            "@test",
+            "@test-live"
+        ],
         "phpstan": "phpstan analyse src tests --level 8",
         "phpcs": "phpcs src tests --standard=PSR12",
         "phpcbf": "phpcbf src tests --standard=PSR12"
