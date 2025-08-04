@@ -1,7 +1,7 @@
 {
     "name": "baja-foundry/flysystem-filecabinet",
     "description": "NetSuite FileCabinet adapter for Flysystem with Laravel support",
-    "version": "1.0.0-beta.4",
+    "version": "1.0.0-beta.2",
     "keywords": ["netsuite", "filecabinet", "flysystem", "laravel", "filesystem"],
     "type": "library",
     "license": "MIT",
